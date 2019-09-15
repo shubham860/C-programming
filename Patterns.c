@@ -1,9 +1,5 @@
 /******************************************************************************
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
 *
 **
 ***
@@ -41,10 +37,6 @@ int main()
 
 /******************************************************************************
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
    *
   **
  ***
@@ -140,10 +132,7 @@ int main()
 
   /******************************************************************************
 
-  Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-  C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-  Code, Compile, Run and Debug online from anywhere in world.
+
 @@@@@@@@@@
 @@@@  @@@@
 @@      @@
@@ -206,7 +195,7 @@ int main()
   ********
     *******
       ******
-        *****                                                                                                                                     
+        *****
           ****
             ***
               **
@@ -251,4 +240,54 @@ int main()
           }
           printf("\n");
       }
+  }
+
+
+  /******************************************************************************
+
+
+
+ ***
+*   *
+*   *
+*   *
+ ***
+*   *
+*   *
+*   *
+ ***
+
+  *******************************************************************************/
+  #include <stdio.h>
+
+  void main()
+  {
+    int i,j,size,k;
+
+    scanf("%d",&size);
+    k=(size*2)-1;
+
+    for(i=1;i<size*2;i++)
+    {
+        for(j=1; j<=size; j++)
+          {
+              // Condition for corner and center intersection space
+              if((i==1 && (j==1 || j==size)) ||
+                 (i==size && (j==1 || j==size)) ||
+                 (i==k && (j==1 || j==size)))
+              {
+                  printf(" ");
+              }
+              else if(i==1 || i==size || i==k || j==1 || j==size)
+              {
+                  printf("*");
+              }
+              else
+              {
+                  printf(" ");
+              }
+          }
+          printf("\n");
+    }
+
   }
